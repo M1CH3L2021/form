@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Trii Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Peça seu orçamento agora mesmo!</h1>
+
+      <form id="form">
+        
+        <fieldset>
+          <label for="name">
+            <span id="name-span">Nome</span>
+            <input id="name" type="text" required>
+          </label>
+
+          <label for="email">
+            <span id="email-span">E-mail</span>
+            <input id="email" type="email" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="phone">
+            <span id="phone-span">Telefone</span>
+            <input id="phone" type="tel" pattern="[0-9]{11}" required>
+          </label>
+
+          <div class="styled-select">
+            <select name="service" id="service" required>
+              <option value="" disabled selected hidden>Escolha o serviço que deseja</option>
+              <option value="service 1">Service 1</option>
+              <option value="service 2">Service 2</option>
+              <option value="service 3">Service 3</option>
+              <option value="service 4">Service 4</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <textarea required></textarea>
+
+        <button id="button" type="submit">
+          Enviar
+        </button>
+        
+      </form>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
